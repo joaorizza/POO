@@ -1,6 +1,14 @@
 class Cliente extends Pessoa {
     private int codigo;
 
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
     public Cliente(String nome, Data nascimento, int codigo) {
         super(nome, nascimento);
         this.codigo = codigo;

@@ -10,7 +10,7 @@ public class TestaCadastro {
         cadastraPessoa(scanner, cadastro, "Funcionario");
         cadastraPessoa(scanner, cadastro, "Gerente");
 
-        cadastro.imprimeCadastro();
+        cadastro.getClass();
         scanner.close();
     }
 
@@ -29,13 +29,13 @@ public class TestaCadastro {
             int codigo = scanner.nextInt();
             scanner.nextLine();
             Cliente cliente = new Cliente(nome, data, codigo);
-            cadastro.cadastraPessoa(cliente);
+            cadastro.getClass(cliente);
         } else if (tipoPessoa.equals("Funcionario")) {
             System.out.print("Salario: ");
             float salario = scanner.nextFloat();
             scanner.nextLine();
             Funcionario funcionario = new Funcionario(nome, data, salario);
-            cadastro.cadastraPessoa(funcionario);
+            cadastro.getClass(funcionario);
         } else if (tipoPessoa.equals("Gerente")) {
             System.out.print("Salario: ");
             float salario = scanner.nextFloat();
@@ -43,7 +43,7 @@ public class TestaCadastro {
             System.out.print("Area: ");
             String area = scanner.nextLine();
             Gerente gerente = new Gerente(nome, data, salario, area);
-            cadastro.cadastraPessoa(gerente);
+            cadastro.getClass(gerente);
         }
     }
 }
